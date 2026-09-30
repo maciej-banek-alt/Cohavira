@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cohavira verbindet privates Wohnen, lebendige Gemeinschaft und flexibel buchbare Unterstützung für ein selbstbestimmtes Leben im Alter."
+    />
+    <meta name="theme-color" content="#0f603e" />
+    <title>Cohavira – Gemeinsam statt einsam</title>
+    <link rel="icon" href="assets/cohavira-logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Cohavira Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44" role="img">
+              <path d="M7 21.5 22 9l15 12.5v14A2.5 2.5 0 0 1 34.5 38h-25A2.5 2.5 0 0 1 7 35.5v-14Z" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linejoin="round"/>
+              <path d="M14 29c4.7-4.4 11.3-4.4 16 0" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round"/>
+              <circle cx="22" cy="19" r="3" fill="#f7b82d"/>
+            </svg>
+          </span>
+          <span class="brand-word">Cohavira</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-button>
+          <span class="sr-only" data-i18n="menu">Menü öffnen</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" data-i18n-aria-label="primaryNavLabel" aria-label="Hauptnavigation" data-navigation>
+          <a href="#idee" data-i18n="navConcept">Das Konzept</a>
+          <a href="#leben" data-i18n="navLiving">Leben bei Cohavira</a>
+          <a href="#kosten" data-i18n="navCosts">Kosten</a>
+          <a href="#familie" data-i18n="navFamilies">Für Angehörige</a>
+          <a href="#partner" data-i18n="navPartners">Für Partner</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="language-switch" role="group" data-i18n-aria-label="languageLabel" aria-label="Sprache wählen">
+            <button class="language-button is-active" type="button" data-language="de" aria-pressed="true">DE</button>
+            <span aria-hidden="true">/</span>
+            <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="button button-small button-primary desktop-cta" href="#kontakt" data-i18n="navCta">Interesse vormerken</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span data-i18n="heroEyebrow">Selbstbestimmt leben. Verbunden bleiben.</span>
+            </div>
+            <h1 data-i18n="heroTitle">Ein Zuhause, das mit dem Leben mitgeht.</h1>
+            <p class="hero-lead" data-i18n="heroLead">
+              Privater Rückzugsort, echte Gemeinschaft und Unterstützung genau dann, wenn sie gebraucht wird – in einem vertrauten Wohnumfeld.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#kontakt">
+                <span data-i18n="heroCta">Wohninteresse vormerken</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="button button-ghost" href="#idee" data-i18n="heroSecondary">Cohavira kennenlernen</a>
+            </div>
+            <p class="hero-note">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 16.5 5v4.6c0 3.9-2.7 6.7-6.5 8-3.8-1.3-6.5-4.1-6.5-8V5L10 2.5Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m7.2 10 1.8 1.8 3.9-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="heroNote">Ein Wohnmodell in Entwicklung – mitgestaltet von zukünftigen Bewohnern und Familien.</span>
+            </p>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay" data-i18n-aria-label="brandPosterLabel" aria-label="Cohavira Markenmotiv">
+            <div class="visual-frame">
+              <div class="brand-poster">
+                <div class="brand-poster-crop" aria-hidden="true">
+                  <img src="assets/cohavira-logo.jpg" alt="" />
+                </div>
+                <p class="brand-poster-tagline" data-i18n="logoTagline">Gemeinsam statt einsam.</p>
+                <p class="brand-poster-subline" data-i18n="logoSubline">WOHNEN · LEBEN · UNTERSTÜTZUNG</p>
+                <div class="brand-benefits" aria-hidden="true">
+                  <div class="brand-benefit">
+                    <svg viewBox="0 0 32 32"><path d="M4 15 16 5l12 10v12H4V15Z" fill="currentColor"/><path d="M13 27v-8h6v8" fill="#fffaf0"/></svg>
+                    <span data-i18n="logoPointOne">Gemeinschaftlich wohnen</span>
+                  </div>
+                  <div class="brand-benefit">
+                    <svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="4" fill="currentColor"/><circle cx="22" cy="12" r="3.5" fill="currentColor"/><path d="M3 27c1-6 3.7-9 8-9s7 3 8 9H3Zm14-3c1-4 3-6 6-6 3.6 0 5.5 3 6 9H18" fill="currentColor"/></svg>
+                    <span data-i18n="logoPointTwo">Aktiv miteinander</span>
+                  </div>
+                  <div class="brand-benefit">
+                    <svg viewBox="0 0 32 32"><path d="M16 3 27 7v8c0 7-4.5 11.5-11 14C9.5 26.5 5 22 5 15V7l11-4Z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="m11 15 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span data-i18n="logoPointThree">Begleitung vor Ort</span>
+                  </div>
+                  <div class="brand-benefit">
+                    <svg viewBox="0 0 32 32"><path d="M16 28S5 21 5 12.5C5 8.8 7.6 6 11 6c2.2 0 4 1.1 5 3 1-1.9 2.8-3 5-3 3.4 0 6 2.8 6 6.5C27 21 16 28 16 28Z" fill="currentColor"/><path d="M9 16h4l2-4 3 8 2-4h4" fill="none" stroke="#fffaf0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span data-i18n="logoPointFour">Pflege optional</span>
+                  </div>
+                  <div class="brand-benefit">
+                    <svg viewBox="0 0 32 32"><rect x="8" y="3" width="16" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M13 7h6M14 25h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="22" r="6" fill="#f7b82d"/><path d="m21.5 22 1.7 1.8 3.3-3.8" fill="none" stroke="#0f603e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span data-i18n="logoPointFive">Einfach buchbar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card floating-card-top">
+              <span class="floating-icon sun" aria-hidden="true"></span>
+              <span data-i18n="floatCommunity">Gemeinschaft, wenn Sie möchten</span>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <span class="floating-icon check" aria-hidden="true">✓</span>
+              <span data-i18n="floatSupport">Hilfe, wenn Sie sie brauchen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" data-i18n-aria-label="benefitsLabel" aria-label="Cohavira Vorteile">
+        <div class="container trust-grid">
+          <div class="trust-item reveal">
+            <span class="trust-number">01</span>
+            <div>
+              <strong data-i18n="trustOneTitle">Privat wohnen</strong>
+              <span data-i18n="trustOneText">Der eigene Rückzugsort bleibt.</span>
+            </div>
+          </div>
+          <div class="trust-item reveal">
+            <span class="trust-number">02</span>
+            <div>
+              <strong data-i18n="trustTwoTitle">Gemeinsam leben</strong>
+              <span data-i18n="trustTwoText">Begegnung entsteht ganz natürlich.</span>
+            </div>
+          </div>
+          <div class="trust-item reveal">
+            <span class="trust-number">03</span>
+            <div>
+              <strong data-i18n="trustThreeTitle">Flexibel unterstützt</strong>
+              <span data-i18n="trustThreeText">Leistungen passen sich dem Bedarf an.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-concept" id="idee">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker" data-i18n="conceptKicker">Die Idee</span>
+            <h2 data-i18n="conceptTitle">Mehr als Wohnen. Ein gutes Gefühl von Zuhause.</h2>
+            <p data-i18n="conceptIntro">
+              Cohavira verbindet drei Dinge, die im Alter zusammengehören: einen privaten Lebensraum, verlässliche soziale Nähe und frei wählbare Unterstützung.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="feature-icon feature-icon-home" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m5 15 11-9 11 9v11H5V15Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 26v-7h8v7" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+              </div>
+              <span class="card-label">01</span>
+              <h3 data-i18n="featureHomeTitle">Mein Zuhause</h3>
+              <p data-i18n="featureHomeText">Eine eigene Wohnung oder ein privates Zimmer – sicher, altersgerecht und mit Raum für die persönliche Lebensgeschichte.</p>
+            </article>
+
+            <article class="feature-card feature-card-highlight reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="22" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M3.5 27c.8-5.2 3.3-8 7.5-8s6.7 2.8 7.5 8M17.2 21c1.1-1.3 2.7-2 4.8-2 3.8 0 6 2.6 6.5 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              </div>
+              <span class="card-label">02</span>
+              <h3 data-i18n="featureCommunityTitle">Unsere Gemeinschaft</h3>
+              <p data-i18n="featureCommunityText">Gemeinsame Mahlzeiten, Aktivitäten oder einfach ein Gespräch – freiwillig, ungezwungen und direkt vor der eigenen Tür.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon feature-icon-care" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 27S5 20.2 5 12.4C5 8.9 7.5 6.5 10.8 6.5c2.2 0 4 1.1 5.2 3 1.2-1.9 3-3 5.2-3 3.3 0 5.8 2.4 5.8 5.9C27 20.2 16 27 16 27Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 16h3l1.5-3.5 3 7 1.5-3.5h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="card-label">03</span>
+              <h3 data-i18n="featureSupportTitle">Meine Unterstützung</h3>
+              <p data-i18n="featureSupportText">Haushalt, Einkauf, Begleitung oder ambulante Pflege: Unterstützung wird nur dann gebucht, wenn sie wirklich gebraucht wird.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section life-section" id="leben">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker" data-i18n="lifeKicker">Leben bei Cohavira</span>
+            <h2 data-i18n="lifeTitle">Ihr Zuhause. Ihr Rhythmus. Ihre Gemeinschaft.</h2>
+            <p data-i18n="lifeIntro">Vom passenden Apartment bis zum spontanen Friseurtermin: Cohavira verbindet persönliche Freiheit mit einem Alltag, der leicht zu organisieren ist.</p>
+          </div>
+
+          <div class="living-grid">
+            <div class="living-journey">
+              <article class="living-step reveal">
+                <span class="living-step-number">01</span>
+                <div>
+                  <h3 data-i18n="livingHomeTitle">Das Zuhause, das zu Ihnen passt</h3>
+                  <p data-i18n="livingHomeText">Sie wählen Zimmer oder Apartment. Auf Wunsch berücksichtigen wir bei der direkten Nachbarschaft ähnliche Interessen und Vorstellungen vom Zusammenleben.</p>
+                </div>
+              </article>
+              <article class="living-step reveal">
+                <span class="living-step-number">02</span>
+                <div>
+                  <h3 data-i18n="livingHostTitle">Eine feste Ansprechperson vor Ort</h3>
+                  <p data-i18n="livingHostText">Ihr Cohavira-Host führt Sie ein, beantwortet Fragen zum Konzept, koordiniert Termine und hilft bei Zusatzleistungen. Der Host übernimmt ausdrücklich keine Pflege.</p>
+                </div>
+              </article>
+              <article class="living-step reveal">
+                <span class="living-step-number">03</span>
+                <div>
+                  <h3 data-i18n="livingChoiceTitle">Sie bestimmen, was zu Ihrem Leben passt</h3>
+                  <p data-i18n="livingChoiceText">Gemeinschaft, Services und Pflege bleiben freiwillig. Sie entscheiden selbst, welche Angebote Sie nutzen und wie viel Sie im Rahmen Ihrer Möglichkeiten ausgeben.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="service-console reveal">
+              <div class="console-topline">
+                <span class="console-logo">C</span>
+                <div>
+                  <strong data-i18n="consoleTitle">Services einfach bestellen</strong>
+                  <small data-i18n="consoleDevices">Am Rezeptionsterminal oder über das iPad im Zimmer</small>
+                </div>
+              </div>
+              <div class="service-tiles">
+                <div class="service-tile"><span aria-hidden="true">✦</span><strong data-i18n="serviceFootcare">Fußpflege</strong><small data-i18n="serviceBook">Termin wählen</small></div>
+                <div class="service-tile"><span aria-hidden="true">✂</span><strong data-i18n="serviceHair">Friseur</strong><small data-i18n="serviceBook">Termin wählen</small></div>
+                <div class="service-tile"><span aria-hidden="true">→</span><strong data-i18n="serviceTaxi">Taxi</strong><small data-i18n="serviceRide">Fahrt bestellen</small></div>
+                <div class="service-tile"><span aria-hidden="true">⌂</span><strong data-i18n="serviceGroceries">Lebensmittel</strong><small data-i18n="serviceOrder">Lieferung bestellen</small></div>
+              </div>
+              <p class="console-help"><span aria-hidden="true">?</span><span data-i18n="consoleHelp">Wer Unterstützung bei der Bestellung möchte, wendet sich einfach an den Cohavira-Host.</span></p>
+            </div>
+          </div>
+
+          <div class="activity-rhythm reveal">
+            <div class="activity-intro">
+              <span class="section-kicker" data-i18n="activityKicker">Von morgens bis abends</span>
+              <h3 data-i18n="activityTitle">Mitmachen, wenn Ihnen danach ist.</h3>
+            </div>
+            <div class="activity-item"><span>09:30</span><strong data-i18n="activityMorning">Frühstück & Kreativrunde</strong></div>
+            <div class="activity-item"><span>14:00</span><strong data-i18n="activityAfternoon">Kochen, Wandern & Ausflüge</strong></div>
+            <div class="activity-item"><span>19:00</span><strong data-i18n="activityEvening">Spiele, Musik & Gespräche</strong></div>
+          </div>
+
+          <div class="choice-banner reveal">
+            <div class="choice-icon" aria-hidden="true">♡</div>
+            <div><strong data-i18n="careOptionalTitle">Pflege bleibt optional.</strong><span data-i18n="careOptionalText">Wenn Unterstützung nötig wird, kann ambulante Pflege individuell hinzugebucht werden – passend zum persönlichen Bedarf.</span></div>
+            <div class="choice-pill" data-i18n="lifeQuote">So viel Unterstützung wie nötig. So viel Selbstständigkeit wie möglich.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section steps-section" id="ablauf">
+        <div class="container">
+          <div class="section-heading section-heading-left reveal">
+            <span class="section-kicker section-kicker-light" data-i18n="stepsKicker">So funktioniert’s</span>
+            <h2 data-i18n="stepsTitle">Unterstützung, die sich Ihrem Leben anpasst.</h2>
+          </div>
+          <ol class="steps-list">
+            <li class="step reveal">
+              <span class="step-number">1</span>
+              <div>
+                <h3 data-i18n="stepOneTitle">Passendes Zuhause finden</h3>
+                <p data-i18n="stepOneText">Wir bringen Interessierte mit einem passenden Cohavira-Wohnstandort zusammen.</p>
+              </div>
+            </li>
+            <li class="step reveal">
+              <span class="step-number">2</span>
+              <div>
+                <h3 data-i18n="stepTwoTitle">In Ruhe einleben</h3>
+                <p data-i18n="stepTwoText">Ihr Zuhause bleibt privat. Gemeinschaftsangebote können Sie freiwillig nutzen.</p>
+              </div>
+            </li>
+            <li class="step reveal">
+              <span class="step-number">3</span>
+              <div>
+                <h3 data-i18n="stepThreeTitle">Hilfe flexibel hinzubuchen</h3>
+                <p data-i18n="stepThreeText">Geprüfte Partner unterstützen im Alltag oder bei Pflegebedarf – transparent und nach Wahl.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="platform-preview reveal">
+            <div class="platform-copy">
+              <span class="platform-pill" data-i18n="platformPill">Einfach organisiert</span>
+              <h3 data-i18n="platformTitle">Alles Wichtige an einem Ort.</h3>
+              <p data-i18n="platformText">Termine, Aktivitäten und buchbare Hilfen sind über die Cohavira-Plattform leicht zugänglich – auf Wunsch auch für Angehörige.</p>
+            </div>
+            <div class="phone" aria-hidden="true">
+              <div class="phone-speaker"></div>
+              <div class="phone-head">
+                <span class="phone-logo">C</span>
+                <div><small data-i18n="phoneMorning">Guten Morgen</small><strong data-i18n="phoneWelcome">Willkommen zuhause</strong></div>
+              </div>
+              <div class="phone-event"><span class="event-icon">☕</span><div><small data-i18n="phoneToday">Heute · 15:00</small><strong data-i18n="phoneEvent">Kaffee im Gartenraum</strong></div></div>
+              <div class="phone-actions"><span data-i18n="phoneHelp">Hilfe buchen</span><span data-i18n="phoneCalendar">Kalender</span><span data-i18n="phoneContact">Kontakt</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cost-section" id="kosten">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker" data-i18n="costKicker">Einfacher Kostenvergleich</span>
+            <h2 data-i18n="costTitle">Mehr Freiheit kann deutlich weniger kosten.</h2>
+            <p data-i18n="costIntro">Unverbindliches Planungsbeispiel für eine weitgehend selbstständige Person mit Pflegegrad 1 in Bochum beziehungsweise Nordrhein-Westfalen.</p>
+          </div>
+
+          <div class="cost-comparison reveal">
+            <article class="cost-card cost-card-cohavira">
+              <div class="cost-card-head">
+                <span class="cost-badge" data-i18n="costFlexible">Flexibel</span>
+                <h3>Cohavira</h3>
+                <p data-i18n="costCohaviraSub">Nur bezahlen, was wirklich genutzt wird</p>
+              </div>
+              <dl class="cost-lines">
+                <div><dt data-i18n="costRent">Wohnen & Nebenkosten</dt><dd>950 €</dd></div>
+                <div><dt data-i18n="costCommunity">Gemeinschaft & Ansprechperson</dt><dd>250 €</dd></div>
+                <div><dt data-i18n="costDaily">Lebensmittel, Haushalt & Mobilität</dt><dd>700 €</dd></div>
+                <div><dt data-i18n="costSupport">Optionale Unterstützung</dt><dd>435 €</dd></div>
+              </dl>
+              <div class="cost-total"><span data-i18n="costExampleTotal">Beispiel gesamt</span><strong>≈ 2.335 €</strong><small data-i18n="costPerMonth">pro Monat</small></div>
+            </article>
+
+            <div class="cost-versus" aria-hidden="true"><span>vs.</span></div>
+
+            <article class="cost-card cost-card-home">
+              <div class="cost-card-head">
+                <span class="cost-badge" data-i18n="costFixed">Weitgehend fix</span>
+                <h3 data-i18n="costHomeTitle">Traditionelles Pflegeheim</h3>
+                <p data-i18n="costHomeSub">Die stationäre Infrastruktur wird vollständig mitbezahlt</p>
+              </div>
+              <dl class="cost-lines">
+                <div><dt data-i18n="costFacility">Beispielhafter Heimplatz</dt><dd>5.000 €</dd></div>
+                <div><dt data-i18n="costInsurance">Pflegekassenzuschuss bei Pflegegrad 1</dt><dd>−131 €</dd></div>
+                <div class="cost-lines-note"><dt data-i18n="costExtras">Friseur, Fußpflege, Taxi & persönliche Ausgaben</dt><dd data-i18n="costExtraValue">zusätzlich</dd></div>
+              </dl>
+              <div class="cost-total"><span data-i18n="costOwnShare">Beispiel Eigenanteil</span><strong>≈ 4.869 €</strong><small data-i18n="costPerMonth">pro Monat</small></div>
+            </article>
+          </div>
+
+          <div class="cost-note reveal">
+            <span aria-hidden="true">i</span>
+            <div>
+              <p data-i18n="costDisclaimer">Die Beträge sind ein vereinfachtes Planungsbeispiel und kein Preisangebot. Tatsächliche Kosten und mögliche Zuschüsse hängen von Standort, Leistungsumfang, Pflegegrad, Anbieter und persönlicher Anspruchsberechtigung ab.</p>
+              <a href="https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/leistungen-der-pflegeversicherung/vollstationaere-pflege-im-heim" target="_blank" rel="noopener noreferrer" data-i18n="costSource">Quelle zum Pflegekassenzuschuss: Bundesgesundheitsministerium, Leistungsbeträge 2026</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section family-section" id="familie">
+        <div class="container family-grid">
+          <div class="family-visual reveal" aria-hidden="true">
+            <div class="family-circle family-circle-large"></div>
+            <div class="family-house">
+              <svg viewBox="0 0 220 200"><path d="M28 90 110 24l82 66v86H28V90Z" fill="#fffaf0" stroke="#0f603e" stroke-width="7" stroke-linejoin="round"/><circle cx="110" cy="78" r="24" fill="#f7b82d"/><path d="M65 144c15-24 30-29 45-16 15-13 30-8 45 16" fill="none" stroke="#0f603e" stroke-width="8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="family-badge"><span>♡</span><span data-i18n="familyBadge">Nah bleiben</span></div>
+          </div>
+          <div class="family-copy reveal">
+            <span class="section-kicker" data-i18n="familyKicker">Für Angehörige</span>
+            <h2 data-i18n="familyTitle">Weniger organisieren. Mehr Familie sein.</h2>
+            <p data-i18n="familyText">
+              Zu wissen, dass ein vertrauter Mensch sicher wohnt, Anschluss findet und bei Bedarf Hilfe erhält, schafft Entlastung – auch aus der Ferne.
+            </p>
+            <ul class="check-list">
+              <li><span>✓</span><span data-i18n="familyPointOne">Freigegebene Termine und Informationen im Blick behalten</span></li>
+              <li><span>✓</span><span data-i18n="familyPointTwo">Unterstützung gemeinsam und transparent koordinieren</span></li>
+              <li><span>✓</span><span data-i18n="familyPointThree">Eine feste Ansprechperson am Wohnstandort erreichen</span></li>
+            </ul>
+            <a class="text-link" href="#kontakt"><span data-i18n="familyCta">Als Angehöriger Kontakt aufnehmen</span><span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker" data-i18n="teamKicker">Hinter Cohavira</span>
+            <h2 data-i18n="teamTitle">Vier Perspektiven. Ein gemeinsames Ziel.</h2>
+            <p data-i18n="teamIntro">Cohavira verbindet die Kompetenzen, die ein gutes Wohnmodell im Alter braucht – vom Gebäude bis zur sicheren digitalen Organisation.</p>
+          </div>
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <span class="team-initial" aria-hidden="true">C</span>
+              <h3>Celine</h3>
+              <p data-i18n="teamCeline">Architektur, barrierearme Planung und Umbau</p>
+            </article>
+            <article class="team-card reveal">
+              <span class="team-initial team-initial-gold" aria-hidden="true">A</span>
+              <h3>Ann</h3>
+              <p data-i18n="teamAnn">Medizinische Anforderungen und Qualitätsstandards</p>
+            </article>
+            <article class="team-card reveal">
+              <span class="team-initial team-initial-teal" aria-hidden="true">T</span>
+              <h3>Theo</h3>
+              <p data-i18n="teamTheo">Plattform, Datenschutz und Cybersicherheit</p>
+            </article>
+            <article class="team-card reveal">
+              <span class="team-initial team-initial-orange" aria-hidden="true">M</span>
+              <h3>Maciej</h3>
+              <p data-i18n="teamMaciej">Finanzierung, Partnerschaften und Geschäftsmodell</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section partner-section" id="partner">
+        <div class="container partner-card reveal">
+          <div class="partner-copy">
+            <span class="section-kicker section-kicker-light" data-i18n="partnerKicker">Für Immobilienpartner</span>
+            <h2 data-i18n="partnerTitle">Aus Wohnraum wird ein lebendiges Zuhause.</h2>
+            <p data-i18n="partnerText">
+              Cohavira entwickelt bestehende Wohnanlagen zu altersgerechten Gemeinschaften – mit Betriebskonzept, digitaler Infrastruktur und lokalem Partnernetzwerk, ohne selbst Immobilieneigentümer zu sein.
+            </p>
+            <a class="button button-light" href="#kontakt" data-i18n="partnerCta">Pilotstandort besprechen</a>
+          </div>
+          <div class="partner-details">
+            <div class="partner-stat"><strong>20–40</strong><span data-i18n="partnerStatOne">Wohnungen als mögliches Pilotformat</span></div>
+            <div class="partner-stat"><strong>1</strong><span data-i18n="partnerStatTwo">integriertes Betriebs- und Plattformkonzept</span></div>
+            <div class="partner-stat"><strong>4</strong><span data-i18n="partnerStatThree">Kompetenzen: Architektur, Medizin, Technologie und Finanzierung</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container faq-grid">
+          <div class="faq-heading reveal">
+            <span class="section-kicker" data-i18n="faqKicker">Gut zu wissen</span>
+            <h2 data-i18n="faqTitle">Ihre Fragen. Klar beantwortet.</h2>
+            <p data-i18n="faqIntro">Das Konzept befindet sich im Aufbau. Diese Antworten beschreiben das geplante Cohavira-Modell.</p>
+          </div>
+          <div class="accordion reveal">
+            <details>
+              <summary><span data-i18n="faqOneQ">Ist Cohavira ein Pflegeheim?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqOneA">Nein. Cohavira ist ein Wohn- und Gemeinschaftskonzept für Menschen, die möglichst selbstständig leben möchten. Pflege kann bei Bedarf über externe Anbieter organisiert werden.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqTwoQ">Muss ich an Gemeinschaftsaktivitäten teilnehmen?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqTwoA">Nein. Sie entscheiden selbst, wann Sie Gemeinschaft möchten und wann Sie Ihren privaten Rückzugsort genießen.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqThreeQ">Kann ich meinen Pflegedienst selbst wählen?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqThreeA">Die freie Wahl soll ein zentraler Bestandteil des Modells sein. Miet-, Service- und Pflegeverträge werden grundsätzlich getrennt gedacht.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqFourQ">Wo gibt es bereits Cohavira-Standorte?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqFourA">Cohavira befindet sich in der Pilotentwicklung. Interessierte Bewohner, Angehörige und Immobilienpartner können sich frühzeitig registrieren und einen Standort mitgestalten.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqFiveQ">Wie setzen sich die Kosten zusammen?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqFiveA">Miete, Cohavira-Services und individuell gebuchte Hilfs- oder Pflegeleistungen sollen getrennt ausgewiesen werden. Eine mögliche Erstattung richtet sich nach persönlichem Anspruch, Leistung und Kostenträger.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqSixQ">Ist Cohavira für jeden Pflegebedarf geeignet?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqSixA">Nicht jeder Standort wird intensive oder dauerhafte Pflege ermöglichen. Vor einem Einzug muss geprüft werden, ob Wohnangebot und Partnernetzwerk zum individuellen Bedarf passen.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faqSevenQ">Was geschieht in einem Notfall?</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+              <p data-i18n="faqSevenA">Notfall- und Bereitschaftslösungen werden für jeden Standort gesondert festgelegt. Cohavira ersetzt weder den Rettungsdienst noch die medizinische Notfallversorgung.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="kontakt">
+        <div class="container contact-card">
+          <div class="contact-copy reveal">
+            <span class="section-kicker" data-i18n="contactKicker">Von Anfang an dabei</span>
+            <h2 data-i18n="contactTitle">Wie möchten Sie Cohavira kennenlernen?</h2>
+            <p data-i18n="contactText">Ob Wohninteresse, Unterstützung für ein Familienmitglied oder möglicher Pilotstandort – wir freuen uns auf Ihre Perspektive.</p>
+            <div class="contact-note">
+              <span class="contact-note-icon" aria-hidden="true">i</span>
+              <span data-i18n="contactNote">Das Formular öffnet Ihr E-Mail-Programm. Die Empfängeradresse kann vor Veröffentlichung angepasst werden.</span>
+            </div>
+          </div>
+          <form class="contact-form reveal" data-contact-form>
+            <div class="form-row">
+              <label>
+                <span data-i18n="formName">Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span data-i18n="formEmail">E-Mail</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+            <label>
+              <span data-i18n="formRole">Ich interessiere mich als …</span>
+              <select name="role" required>
+                <option value="" data-i18n="formSelect">Bitte auswählen</option>
+                <option value="Wohninteressent" data-i18n="formResident">Wohninteressent/in</option>
+                <option value="Angehörige" data-i18n="formRelative">Angehörige/r</option>
+                <option value="Immobilienpartner" data-i18n="formProperty">Immobilienpartner</option>
+                <option value="Pflege- oder Servicepartner" data-i18n="formProvider">Pflege- oder Servicepartner</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="formCity">Wunschregion oder Standort</span>
+              <input type="text" name="city" autocomplete="address-level2" data-i18n-placeholder="formCityPlaceholder" placeholder="z. B. Köln" />
+            </label>
+            <label>
+              <span data-i18n="formMessage">Was dürfen wir wissen?</span>
+              <textarea name="message" rows="4" data-i18n-placeholder="formMessagePlaceholder" placeholder="Erzählen Sie uns kurz von Ihrem Interesse."></textarea>
+            </label>
+            <button class="button button-primary form-submit" type="submit">
+              <span data-i18n="formSubmit">Anfrage vorbereiten</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="#top"><span class="brand-word">Cohavira</span></a>
+          <p data-i18n="footerTagline">Gemeinsam statt einsam.<br />Wohnen · Leben · Unterstützung</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong data-i18n="footerExplore">Entdecken</strong>
+            <a href="#idee" data-i18n="navConcept">Das Konzept</a>
+            <a href="#leben" data-i18n="navLiving">Leben bei Cohavira</a>
+            <a href="#kosten" data-i18n="navCosts">Kosten</a>
+            <a href="#familie" data-i18n="navFamilies">Für Angehörige</a>
+          </div>
+          <div>
+            <strong data-i18n="footerConnect">Mitmachen</strong>
+            <a href="#partner" data-i18n="navPartners">Für Partner</a>
+            <a href="#kontakt" data-i18n="footerInterest">Interesse vormerken</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div>
+            <strong data-i18n="footerLegal">Rechtliches</strong>
+            <a href="#" data-placeholder-link data-i18n="footerImprint">Impressum</a>
+            <a href="#" data-placeholder-link data-i18n="footerPrivacy">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Cohavira</span>
+        <span data-i18n="footerStatus">Konzeptwebsite · Pilotphase</span>
+      </div>
+    </footer>
+  </body>
+</html>
